@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		
+		<title>Blank Page</title>
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/uikit.min.css">
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+
+		<script src="./assets/js/uikit.min.js"></script>
+
+		<script src="./assets/js/uikit-icons.min.js"></script>
+
+		<script src="./assets/js/custom.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+			
+			<nav class="uk-container uk-navbar">
+				
+				<div class="uk-navbar-left">
+					
+					<ul class="uk-navbar-nav">
+						
+						<li class="uk-active">
+							
+							<a href="#">
+								
+								Real<strong>Estate</strong>
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="uk-navbar-right">
+					
+					<ul class="uk-navbar-nav uk-visible@s">
+						
+						<li>
+							
+							<a href="#"> 
+
+								Entrar/Registro
+
+							</a>
+
+						</li>
+
+						<li>
+							
+							<a href="">
+								
+								<button class="uk-button uk-button-primary">
+									
+									Añadir propiedad
+
+								</button>
+
+							</a>
+
+						</li>
+
+						<li>
+							
+							<a href="#search_modal" class="uk-navbar-toggle" uk-search-icon uk-toggle></a>
+
+						</li>
+
+					</ul>
+
+					<a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+
+				</div>
+
+				<div id="search_modal" class="uk-modal-full uk-modal" uk-modal>
+					
+					<div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+						
+						<button class="uk-modal-close-full" type="button" uk-close></button>
+
+						<form class="uk-search uk-search-large" method="GET">
+								
+							<input type="text" name="q" class="uk-search-input uk-text-center" placeholder="Busca tu hogar ..." autofocus>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+			<div id="sidenav" uk-offcanvas="overlay: true">
+				
+				<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+					
+					<ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
+						
+						<li class="uk-nav-header">
+							
+							Real<strong>Estate</strong>
+
+						</li>
+
+
+						<li>
+							
+							<a href="#">
+								
+								<span class="uk-margin-small-right" uk-icon="icon: sign-in"></span>
+
+								Entrar/Registro
+
+							</a>
+
+						</li>
+
+						<li>
+							
+							<a href="#">
+								
+								<span class="uk-margin-small-right" uk-icon="icon: plus"></span>
+
+								Añadir propiedad
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</header>
+
+		<main>
+
+			<div class="uk-section uk-padding-remove">
+				
+				<div class="uk-cover-container">
+					
+					<canvas width="" height="100px"></canvas>
+
+					<img src="./assets/img/backgrounds/breadcrumb.jpg" uk-cover>
+
+					<div class="uk-position-small uk-position-center-left uk-overlay">
+							
+						<ul class="uk-breadcrumb uk-light">
+
+						    <li><a href="">Inicio</a></li>
+						    
+						    <li><a href="">Página en blanco</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="uk-section uk-flex uk-flex-middle uk-animation-fade">
+				
+				<div class="uk-container">
+					
+					<div uk-grid>
+						
+						<div class="uk-card- uk-card-default uk-card-body uk-card-box-shadow-large uk-margin uk-width-xlarge">
+							
+							<h2 class="uk-text-center">
+								
+								Registro
+
+							</h2>
+
+							<form>
+								
+								<div class="uk-margin">
+									
+									<div class="uk-inline uk-width-1-1">
+										
+										<span class="uk-form-icon" uk-icon="icon: user"></span>
+
+										<input class="uk-input uk-form-large"  type="text" name="" placeholder="Nombre">
+
+									</div>
+
+								</div>
+
+								<div class="uk-margin">
+									
+									<div class="uk-inline uk-width-1-1">
+										
+										<span class="uk-form-icon" uk-icon="icon: mail"></span>
+										
+										<input class="uk-input uk-form-large"  type="email" name="" placeholder="Correo electrónico">
+
+									</div>
+
+								</div>
+
+								<div class="uk-margin">
+									
+									<div class="uk-inline uk-width-1-1">
+										
+										<span class="uk-form-icon" uk-icon="icon: lock"></span>
+										<input class="uk-input uk-form-large"  type="password" name="" placeholder="Contraseña">
+
+									</div>
+
+								</div>
+
+								<div class="uk-margin">
+									
+									<div class="uk-inline uk-width-1-1">
+										
+										<span class="uk-form-icon" uk-icon="icon: lock"></span>
+										<input class="uk-input uk-form-large"  type="password" name="" placeholder="Confirmar Contraseña">
+
+									</div>
+
+								</div>	
+
+								<div class="uk-margin">
+									
+									<label>
+										
+										<input type="checkbox" class="uk-checkbox" name="">
+
+										Acepto la <a href="#">Política de Privacidad</a> y los <a href="#">Términos de usuario</a>
+
+									</label>
+
+								</div>
+
+								<div class="uk-margin">
+									
+									<button class="uk-button uk-button-primary uk-button-large uk-width-1-1">
+										
+										Registrarme
+
+									</button>
+
+								</div>
+
+								<div class="uk-text-small uk-text-center">
+									
+									<p> ¿Ya tienes cuenta? <a href="#">Entrar</a></p>
+
+								</div>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer id="footer" class="uk-background-muted">
+			
+			<div class="uk-container uk-padding">
+				
+				<div class="uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+					
+					<div>
+						
+						<h3 class="uk-heading-bullet">Acerca</h3>
+
+						<a href="#"> REAL<strong>ESTATE</strong></a>
+
+						<p>Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.</p>
+
+						<p>Lorem ipsum dolor cum necessitatibus su quisquam molestias. Vel unde, blanditiis.</p>
+
+					</div>
+
+					<div>
+						
+						<h3 class="uk-heading-bullet">Últimas propiedades</h3>
+
+						<div class="uk-margin-small" uk-grid>
+							
+							<div class="uk-width-1-4">
+								
+								<img src="https://getuikit.com/docs/images/light.jpg">
+
+							</div>
+
+							<div class="uk-width-expand">
+								
+								<p class="uk-margin-remove"><b>Nombre de la propiedad</b></p>
+
+								<p class="uk-margin-remove">Descripción de la propiedad</p>
+
+							</div>
+
+						</div>
+
+						<div class="uk-margin-small" uk-grid>
+							
+							<div class="uk-width-1-4">
+								
+								<img src="https://getuikit.com/docs/images/light.jpg">
+
+							</div>
+
+							<div class="uk-width-expand">
+								
+								<p class="uk-margin-remove"><b>Nombre de la propiedad</b></p>
+
+								<p class="uk-margin-remove">Descripción de la propiedad</p>
+
+							</div>
+
+						</div>
+
+						<div class="uk-margin-small" uk-grid>
+							
+							<div class="uk-width-1-4">
+								
+								<img src="https://getuikit.com/docs/images/light.jpg">
+
+							</div>
+
+							<div class="uk-width-expand">
+								
+								<p class="uk-margin-remove"><b>Nombre de la propiedad</b></p>
+
+								<p class="uk-margin-remove">Descripción de la propiedad</p>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+					<div>
+						
+						<h3 class="uk-heading-bullet">Contacto</h3>
+
+						<address>
+							
+							9089 tu dirección <br />
+							correo@correo.com <br />
+							+52 999 999 9999
+
+						</address>
+
+						<div>
+							
+							<form>
+								
+								<input type="email" name="email" class="uk-input uk-form-width-medium">
+
+								<button class="uk-button uk-button-default">Enviar</button>
+
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="uk-container uk-container-expand uk-background-secondary uk-light uk-padding-remove">
+				
+				<div class="uk-text-center uk-padding-small">
+					
+					Real<strong>Estate</strong> &copy; Todos los derechos reservados
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+	
+</html>

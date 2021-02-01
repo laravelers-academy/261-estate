@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+			
+			<title>Admin</title>
+
+			<link rel="stylesheet" type="text/css" href="./assets/css/uikit.min.css">
+
+			<link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+
+			<link rel="stylesheet" type="text/css" href="./assets/css/admin.css">
+
+			<script src="./assets/js/uikit.min.js"></script>
+
+			<script src="./assets/js/uikit-icons.min.js"></script>
+
+			<script src="./assets/js/custom.js"></script>
+
+
+	</head>
+
+	<body class="uk-background-muted">
+
+		<header>
+				
+			<nav class="uk-navbar uk-background-secondary uk-light" uk-sticky>
+				
+				<div class="uk-navbar-left">
+					
+					<ul class="uk-navbar-nav">
+
+						<li class="uk-active">
+							
+							<a href="#">
+								
+								Real<strong>Estate</strong>
+
+							</a>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="uk-navbar-right">
+					
+					<ul class="uk-navbar-nav">
+						
+						<li>
+							
+							<a class="uk-navbar-toggle" href="#search_modal" uk-search-icon uk-toggle></a>
+
+						</li>
+
+						<li>
+							
+							<a href="#">
+								
+								<img src="https://getuikit.com/docs/images/avatar.jpg" type="button" class="uk-border-pill" style="width: 35px; height: 35px;">
+
+								<div uk-dropdown="mode: click">
+									
+									<ul class="uk-nav uk-dropdown-nav">
+										
+										<li class="uk-active">
+											
+											<a href="#">
+												
+												Mi Perfil
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Item 1
+
+											</a>
+
+										</li>
+
+										<li class="uk-nav-header">
+											
+											Encabezado
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Item 2
+
+											</a>
+
+										</li>
+
+										<li class="uk-nav-divider"></li>
+
+										<li>
+											
+											<a href="#">
+												
+												Cerrar sesión
+
+											</a>
+
+										</li>
+
+
+
+									</ul>
+
+								</div>
+
+							</a>
+
+						</li>
+
+					</ul>
+
+					<a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #mobile_sidebar"></a>
+
+				</div>
+
+				<div id="search_modal" class="uk-modal-full uk-modal" uk-modal>
+					
+					<div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+						
+						<button class="uk-modal-close-full" type="button" uk-close></button>
+
+						<form class="uk-search uk-search-large" method="GET">
+								
+							<input type="text" name="q" class="uk-search-input uk-text-center" placeholder="Busca tu hogar ..." autofocus>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+			<div id="mobile_sidebar" uk-offcanvas="overlay: true">
+				
+				<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+					
+					<ul uk-accordion="multiple: true">
+
+						<li>
+							
+							<a href="#" class="uk-accordion-title">Inicio</a>
+
+							<div class="uk-accordion-content">
+								
+								<ul class="uk-list">
+									
+									<li>
+										
+										<a href="#">
+											
+											Dashboard
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Mi Perfil
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Cambiar contraseña
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Mi suscripción
+
+										</a>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+						</li>
+
+						<li>
+							
+							<a href="#" class="uk-accordion-title">Propiedades</a>
+
+							<div class="uk-accordion-content">
+								
+								<ul class="uk-list">
+									
+									<li>
+										
+										<a href="#">
+											
+											Mis Propiedades
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Propiedades expiradas
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Crear propiedad
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Contacto
+
+										</a>
+
+									</li>
+
+									<li>
+										
+										<a href="#">
+											
+											Comentarios
+
+										</a>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+						</li>
+
+						<li>
+							
+							<a href="#" class="uk-accordion-title">Administración</a>
+
+							<div class="uk-accordion-content">
+								
+								<ul class="uk-list">
+									
+									<li>
+										
+										<a href="#">
+											
+											Usuarios
+
+										</a>
+
+									</li>
+
+								</ul>
+
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</header>
+
+		<main>
+				
+			<div uk-grid uk-height-viewport="expand: true">
+				
+				<div class="uk-width-medium uk-visible@m">
+					
+					<div class="uk-width-medium uk-background-secondary admin-sidebar">
+						
+						<ul class="uk-margin-left uk-light" uk-accordion="multiple: true">
+
+							<li>
+								
+								<a href="#" class="uk-accordion-title">Inicio</a>
+
+								<div class="uk-accordion-content">
+									
+									<ul class="uk-list">
+										
+										<li>
+											
+											<a href="#">
+												
+												Dashboard
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Mi Perfil
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Cambiar contraseña
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Mi suscripción
+
+											</a>
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</li>
+
+							<li>
+								
+								<a href="#" class="uk-accordion-title">Propiedades</a>
+
+								<div class="uk-accordion-content">
+									
+									<ul class="uk-list">
+										
+										<li>
+											
+											<a href="#">
+												
+												Mis Propiedades
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Propiedades expiradas
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Crear propiedad
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Contacto
+
+											</a>
+
+										</li>
+
+										<li>
+											
+											<a href="#">
+												
+												Comentarios
+
+											</a>
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</li>
+
+							<li>
+								
+								<a href="#" class="uk-accordion-title">Administración</a>
+
+								<div class="uk-accordion-content">
+									
+									<ul class="uk-list">
+										
+										<li>
+											
+											<a href="#">
+												
+												Usuarios
+
+											</a>
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="uk-width-expand">
+					
+					<!-- HEADER --> 
+					<div class="uk-padding-small">
+						
+						<div class="uk-section-small">
+							
+							<div class="uk-container uk-container-expand">
+								
+								<ul class="uk-breadcrumb uk-margin-remove-bottom">
+									
+									<li><a href="#">Dashboard</a></li>
+
+									<li><a href="#">Otra página</a></li>
+
+								</ul>
+
+								<h1 class="uk-margin-small-top">Dashboard</h1>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- CONTENT -->
+					
+
+				</div>
+
+			</div>
+
+			<div class="footer uk-section uk-padding-small">
+				
+				<div class="uk-container uk-container-expand">
+					
+					<div uk-grid>
+						
+						<div class="uk-width-1-1 uk-text-center">
+							
+							<p>REAL<strong>ESTATE</strong> &copy; Todos los derechos reservados.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+	</body>
+
+</html>

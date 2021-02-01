@@ -1,0 +1,25 @@
+.pointer {
+	cursor: pointer;
+}
+
+.estate-slider-img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.property-slider-img {
+	width: 400px;
+	height: 500px;
+	object-fit: cover; 
+}
+
+.uk-text-white, .uk-text-white-hover:hover{
+	color: #fff;
+}
+
+#footer {
+
+	border-top: 5px black solid;
+
+}

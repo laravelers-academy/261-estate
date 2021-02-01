@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    
+        <title>Administración</title>
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="./assets/css/uikit.min.css" />
+
+        <link rel="stylesheet" href="./assets/css/custom.css" />
+
+        <link rel="stylesheet" href="./assets/css/admin.css" />
+    
+        <script src="./assets/js/uikit.min.js"></script>
+    
+        <script src="./assets/js/uikit-icons.min.js"></script>
+    
+    </head>
+    
+    <body class="uk-background-muted">
+
+        <header>
+
+            <!-- Main Navbar -->
+            <nav class="uk-navbar uk-background-secondary uk-light" uk-sticky>
+
+                <div class="uk-navbar-left">
+                
+                    <ul class="uk-navbar-nav">
+                
+                        <li class="uk-active">
+                
+                            <a href="#">Real<strong>Estate</strong></a>
+                
+                        </li> 
+                
+                    </ul>
+                
+                </div>
+                
+                <div class="uk-navbar-right">
+                
+                    <ul class="uk-navbar-nav">
+
+                        <li>
+
+                            <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">
+
+                                <img type="button" class="uk-border-pill" src="https://getuikit.com/docs/images/avatar.jpg" width="35" height="35" alt="Border pill">
+
+                                <div uk-dropdown="mode: click">
+
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        
+                                        <li><a href="#">Item</a></li>
+                                        
+                                        <li class="uk-nav-header">Header</li>
+                                        
+                                        <li><a href="#">Item</a></li>
+                                        
+                                        <li><a href="#">Item</a></li>
+                                        
+                                        <li class="uk-nav-divider"></li>
+                                        
+                                        <li><a href="#">Item</a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </a>
+
+                        </li>
+                
+                    </ul>
+
+                    <a 
+                        href="#" 
+                        class="uk-navbar-toggle uk-hidden@m" 
+                        uk-navbar-toggle-icon uk-toggle="target: #mobile_sidebar"></a>
+                
+                </div>
+
+                <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+                    
+                    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                    
+                        <button class="uk-modal-close-full" type="button" uk-close></button>
+                    
+                        <form class="uk-search uk-search-large">
+                    
+                            <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+                    
+                        </form>
+                    
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div id="mobile_sidebar" uk-offcanvas="overlay: true">
+
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                    <ul uk-accordion="multiple: true">
+                        
+                        <li>
+
+                            <a class="uk-accordion-title" href="#">Inicio</a>
+                            
+                            <div class="uk-accordion-content">
+                            
+                                <ul class="uk-list">
+                            
+                                    <li>
+                            
+                                        <a href="#">
+                                            Dashboard
+                                        </a>
+                            
+                                    </li>
+
+                                    <li>
+                            
+                                        <a href="#">
+                                            Mi Perfil
+                                        </a>
+                            
+                                    </li>
+                            
+                                    <li>
+                            
+                                        <a href="">
+                                            Cambiar contraseña
+                                        </a>
+                            
+                                    </li>
+                            
+                                    <li>
+                            
+                                        <a href="">
+                                            Mi suscripción
+                                        </a>
+                            
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <a class="uk-accordion-title" href="#">Propiedades</a>
+
+                            <div class="uk-accordion-content">
+                                
+                                <ul class="uk-list">
+                            
+                                    <li>
+                            
+                                        <a href="#">
+                                            Mis propiedades
+                                        </a>
+                            
+                                    </li>
+
+                                    <li>
+                            
+                                        <a href="#">
+                                            Propiedades expiradas
+                                        </a>
+                            
+                                    </li>
+                            
+                                    <li>
+                            
+                                        <a href="">
+                                            Crear propiedad
+                                        </a>
+                            
+                                    </li>
+                            
+                                    <li>
+                            
+                                        <a href="">
+                                            Contacto
+                                        </a>
+                            
+                                    </li>
+
+                                    <li>
+                            
+                                        <a href="">
+                                            Comentarios
+                                        </a>
+                            
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+
+                            <a class="uk-accordion-title" href="#">Administración</a>
+
+                            <div class="uk-accordion-content">
+                                
+                                <ul class="uk-list">
+                            
+                                    <li>
+                            
+                                        <a href="#">
+                                            Usuarios
+                                        </a>
+                            
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+                    
+            <div uk-grid uk-height-viewport="expand: true"> <!-- PARA MOSTRAR EL FOOTER AL FINAL DE LA PÁGINA -->
+                
+                <div class="uk-width-medium uk-visible@m">
+                    
+                    <div class="uk-width-medium uk-background-secondary admin-sidebar">
+
+                        <ul class="uk-margin-left uk-light" uk-accordion="multiple: true">
+
+                            <li>
+
+                                <a class="uk-accordion-title" href="#">Inicio</a>
+                                
+                                <div class="uk-margin-left uk-accordion-content">
+                                
+                                    <ul class="uk-list">
+
+                                        <li>
+                    
+                                            <a href="#">
+                                                Dashboard
+                                            </a>
+                                
+                                        </li>
+                                
+                                        <li>
+                                
+                                            <a href="#">
+                                                Mi Perfil
+                                            </a>
+                                
+                                        </li>
+                                
+                                        <li>
+                                
+                                            <a href="">
+                                                Cambiar contraseña
+                                            </a>
+                                
+                                        </li>
+                                
+                                        <li>
+                                
+                                            <a href="">
+                                                Mi suscripción
+                                            </a>
+                                
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </li>
+
+                            <li>
+
+                                <a class="uk-accordion-title" href="#">Propiedades</a>
+
+                                <div class="uk-margin-left uk-accordion-content">
+                                    
+                                    <ul class="uk-list">
+                                
+                                        <li>
+                                
+                                            <a href="#">
+                                                Mis propiedades
+                                            </a>
+                                
+                                        </li>
+
+                                        <li>
+                                
+                                            <a href="#">
+                                                Propiedades expiradas
+                                            </a>
+                                
+                                        </li>
+                                
+                                        <li>
+                                
+                                            <a href="">
+                                                Crear propiedad
+                                            </a>
+                                
+                                        </li>
+                                
+                                        <li>
+                                
+                                            <a href="">
+                                                Contacto
+                                            </a>
+                                
+                                        </li>
+
+                                        <li>
+                                
+                                            <a href="">
+                                                Comentarios
+                                            </a>
+                                
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </li>
+
+                            <li>
+
+                                <a class="uk-accordion-title" href="#">Administración</a>
+
+                                <div class="uk-margin-left uk-accordion-content">
+                                    
+                                    <ul class="uk-list">
+                                
+                                        <li>
+                                
+                                            <a href="#">
+                                                Usuarios
+                                            </a>
+                                
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="uk-width-expand">
+                    
+                    <!-- CONTENIDO DE LA PÁGINA-->
+
+                    <div class="uk-padding-small">
+
+                        <!-- HEADER -->
+                        <div class="uk-section-small">
+
+                            <div class="uk-container uk-container-expand">
+                                
+                                <ul class="uk-breadcrumb uk-margin-remove-bottom">
+                                    
+                                    <li><a href="index.html">Home</a></li>
+                                    
+                                    <li><span href="">Dashboard</span></li>
+
+                                </ul> 
+
+                                <h1 class="uk-margin-small-top">Dashboard</h1>
+
+                            </div>
+
+                        </div>
+
+                        <!-- CONTENT-->
+
+                            <!-- CARDS -->
+                            <div class="uk-section uk-padding-remove">
+                                
+                                <div class="uk-container uk-container-expand">
+                                    
+                                    <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid uk-height-match="target: > div > .uk-card">
+                                        
+                                        <div>
+
+                                            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+
+                                                <h3 class="uk-card-title">Interacciones</h3>
+
+                                                <div class="uk-text-center">
+                                                    
+                                                    <img src="./assets/img/icons/users.svg" style="width: 80px;">
+
+                                                    <span class="uk-padding uk-text-middle uk-text-large">
+                                                        250
+                                                    </span>
+
+                                                    <span class="uk-label uk-label-success">
+                                                        8% 
+                                                        <img src="./assets/img/icons/up-arrow.svg" style="width: 12px;">
+                                                    </span>
+
+                                                </div>
+                                                    
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                                                
+                                                <h3 class="uk-card-title">Propiedades regulares</h3>
+
+                                                <div class="uk-text-center">
+                                                    
+                                                    <img src="./assets/img/icons/hogar.svg" style="width: 80px;">
+
+                                                    <span class="uk-padding uk-text-middle uk-text-large">
+                                                        18
+                                                    </span>
+
+                                                    <span class="uk-label uk-label-success">
+                                                        8% 
+                                                        <img src="./assets/img/icons/up-arrow.svg" style="width: 12px;">
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                                                
+                                                <h3 class="uk-card-title">Propiedades destacadas</h3>
+
+                                                <div class="uk-text-center">
+                                                    
+                                                    <img src="./assets/img/icons/hogar-pro.svg" style="width: 80px;">
+
+                                                    <span class="uk-padding uk-text-middle uk-text-large">
+                                                        10
+                                                    </span>
+
+                                                    <span class="uk-label uk-label-danger">
+                                                        8% 
+                                                        <img src="./assets/img/icons/down-arrow.svg" style="width: 12px;">
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                                                
+                                                <h3 class="uk-card-title">Contacto</h3>
+
+                                                <div class="uk-text-center">
+                                                    
+                                                    <img src="./assets/img/icons/contact.svg" style="width: 80px;">
+
+                                                    <span class="uk-padding uk-text-middle uk-text-large">
+                                                        10
+                                                    </span>
+
+                                                    <span class="uk-label uk-label-success">
+                                                        8% 
+                                                        <img src="./assets/img/icons/up-arrow.svg" style="width: 12px;">
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- TABLES -->
+                            <div class="uk-section">
+                                
+                                <div class="uk-container uk-container-expand">
+                                    
+                                    <div class="uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid uk-height-match="target: > div > .uk-card">
+                                        
+                                        <div>
+                                            
+                                            <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+
+                                                <div class="uk-card-header uk-padding-small">
+                                                    
+                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Últimos mensajes</h3>
+
+                                                    <div class="uk-position-medium uk-position-top-right" style="margin-top: 20px !important;">
+                                                            
+                                                        <img class="pointer" src="./assets/img/icons/list.svg" type="button" style="width: 20px;">
+
+                                                        <div uk-dropdown="mode: click">
+
+                                                            <ul class="uk-nav uk-dropdown-nav">
+                                                            
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li class="uk-nav-header">Header</li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li class="uk-nav-divider"></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                            </ul>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="uk-container uk-container-expand uk-card-max-height">
+                                              
+                                                    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="uk-table-shrink"></th>
+                                                                <th class="uk-table-shrink">Preserve</th>
+                                                                <th class="uk-table-expand">Expand + Link</th>
+                                                                <th class="uk-width-small">Truncate</th>
+                                                                <th class="uk-table-shrink uk-text-nowrap">Shrink + Nowrap</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td><img class="uk-preserve-width uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="40" alt=""></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td><img class="uk-preserve-width uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="40" alt=""></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td><img class="uk-preserve-width uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="40" alt=""></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td><img class="uk-preserve-width uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="40" alt=""></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+                                                <div class="uk-card-footer uk-padding-small">
+                                                    
+                                                    <ul class="uk-pagination uk-flex-center" uk-margin>
+                                                        
+                                                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                                        
+                                                        <li><a href="#">1</a></li>
+                                                        
+                                                        <li class="uk-disabled"><span>...</span></li>
+                                                        
+                                                        <li><a href="#">5</a></li>
+                                                        
+                                                        <li><a href="#">6</a></li>
+                                                        
+                                                        <li class="uk-active"><span>7</span></li>
+                                                        
+                                                        <li><a href="#">8</a></li>
+                                                        
+                                                        <li><a href="#"><span uk-pagination-next></span></a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div>
+                                            
+                                            <div class="uk-card uk-card-default uk-card-body uk-padding-remove">
+
+                                                <div class="uk-card-header uk-padding-small">
+                                                    
+                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Comentarios</h3>
+
+                                                    <div class="uk-position-medium uk-position-top-right" style="margin-top: 20px !important;">
+                                                            
+                                                        <img class="pointer" src="./assets/img/icons/list.svg" type="button" style="width: 20px;">
+
+                                                        <div uk-dropdown="mode: click">
+
+                                                            <ul class="uk-nav uk-dropdown-nav">
+                                                            
+                                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li class="uk-nav-header">Header</li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                                <li class="uk-nav-divider"></li>
+                                                            
+                                                                <li><a href="#">Item</a></li>
+                                                            
+                                                            </ul>
+                                                            
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="uk-container uk-container-expand uk-card-max-height">
+                                              
+                                                    <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+                                                        
+                                                        <thead>
+
+                                                            <tr>
+
+                                                                <th class="uk-table-shrink"></th>
+                                                                <th class="uk-table-expand">Expand + Link</th>
+                                                                <th class="uk-width-small">Truncate</th>
+                                                                <th class="uk-table-shrink uk-text-nowrap">Shrink + Nowrap</th>
+                                                            </tr>
+
+                                                        </thead>
+
+                                                        <tbody>
+
+                                                            <tr>
+
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                                <td class="uk-table-link">
+                                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                                </td>
+                                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                                                            </tr>
+                                                        
+                                                        </tbody>
+
+                                                    </table>
+
+                                                </div>
+
+                                                <div class="uk-card-footer uk-padding-small">
+                                                    
+                                                    <ul class="uk-pagination uk-flex-center" uk-margin>
+                                                        
+                                                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                                                        
+                                                        <li><a href="#">1</a></li>
+                                                        
+                                                        <li class="uk-disabled"><span>...</span></li>
+                                                        
+                                                        <li><a href="#">5</a></li>
+                                                        
+                                                        <li><a href="#">6</a></li>
+                                                        
+                                                        <li class="uk-active"><span>7</span></li>
+                                                        
+                                                        <li><a href="#">8</a></li>
+                                                        
+                                                        <li><a href="#"><span uk-pagination-next></span></a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        <!-- END CONTENT -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->                
+            <div class="footer uk-section uk-padding-small">
+                
+                <div class="uk-container uk-container-expand">
+                    
+                    <div uk-grid>
+                            
+                        <div class="uk-width-1-1 uk-text-center">
+                            
+                            <p>REAL<b>ESTATE</b> &copy; Todos los derechos reservados</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+    
+    </body>
+
+</html>
